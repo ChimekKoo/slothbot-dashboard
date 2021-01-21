@@ -1,0 +1,8 @@
+venv/
+.idea/
+log.log
+.DS_Store
+cred.json
+db.sqlite3
+sentence_tokenizer.pickle
+**/__pycache__/

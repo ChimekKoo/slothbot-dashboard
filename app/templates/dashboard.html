@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %} - Dashboard{% endblock %}
+{% block content %}
+    <header class="w3-xlarge">
+        <img class="w3-round" src="https://cdn.discordapp.com/icons/{{ guild['id'] }}/{{ guild['icon'] }}.png" width="45px" height="45px">
+        <span>{{ guild['name'] }} server Dashboard</span>
+    </header>
+{% endblock %}

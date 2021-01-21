@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SlothBot{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="{{ url }}/static/slothbot_logo_transparent.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Noto Sans', sans-serif">
+
+    <nav class="w3-bar">
+        <div class="w3-bar-item 3-hover-white w3-text-hover-gray w3-text-gray">
+            <a href="{{ url }}/">
+                <img src="{{ url }}/static/slothbot_logo_transparent.png">
+                <span>SlothBot</span>
+            </a>
+        </div>
+        <div class="w3-bar-item w3-hover-white w3-text-hover-gray w3-text-gray"><a href="{{ url }}/"></a></div>
+    </nav>
+
+    <div class="w3-container">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>

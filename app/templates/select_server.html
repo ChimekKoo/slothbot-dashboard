@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} - Select server{% endblock %}
+{% block content %}
+    <header>Select server</header>
+    <form action="{{ url }}/dashboard" method="get">
+        {% for guild in guilds %}
+            <label>
+                <input type="radio" name="guild" value="{{ guild['id'] }}" required>
+                <img src="https://cdn.discordapp.com/icons/{{ guild['id'] }}/{{ guild['icon'] }}.png" width="30px" height="30px">
+                <span>{{ guild['name'] }}</span>
+            </label><br>
+        {% endfor %}
+        <br>
+        <input type="submit" value="Go to dashboard!">
+    </form>
+{% endblock %}

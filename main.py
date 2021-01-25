@@ -1,12 +1,12 @@
-from flask import Flask, session, render_template, request, redirect, url_for, send_file, abort, jsonify
+from flask import Flask, session, render_template, request, redirect, url_for, send_file, abort
 from pymongo import MongoClient
 from json import loads, dumps
 from magic import from_file as magic_from_file
 
-from app.cred import get_cred
-from app.oauth import Oauth
-from app.constants import *
-from app.utils import check_if_authorized
+from cred import get_cred
+from oauth import Oauth
+from constants import *
+from utils import check_if_authorized
 
 
 cred = get_cred()
@@ -47,19 +47,6 @@ def dashboard():
                 for guild in loads(session["guilds"]):
                     if guild["owner"] and guild["id"] == request.args["guild"]:
 
-                        return render_template("dashboard.html", url=BASE_URL, guild=guild)
-
-                return redirect(url_for("select_server"))
-
-        elif request.method == "POST":
-
-            try:
-                request.args["guild"]
-            except KeyError:
-                return redirect(url_for("select_server"))
-            else:
-                for guild in loads(session["guilds"]):
-                    if guild["owner"] and guild["id"] == request.args["guild"]:
                         return render_template("dashboard.html", url=BASE_URL, guild=guild)
 
                 return redirect(url_for("select_server"))

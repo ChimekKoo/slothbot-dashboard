@@ -1,4 +1,4 @@
-from logger import levels
+from bot.logger import levels
 from datetime import datetime
 
 

@@ -1,4 +1,4 @@
-from app.cred import get_cred
+from cred import get_cred
 from requests import post as requests_post
 from requests import get as requests_get
 

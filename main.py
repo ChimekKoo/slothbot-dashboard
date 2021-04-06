@@ -1,7 +1,6 @@
-from flask import Flask, session, render_template, request, redirect, url_for, send_file, abort
+from flask import Flask, session, render_template, request, redirect, url_for
 from pymongo import MongoClient
 from json import loads, dumps
-from magic import from_file as magic_from_file
 
 from cred import get_cred
 from oauth import Oauth
@@ -22,15 +21,6 @@ servers_col = db["servers"]
 @app.route("/")
 def index():
     return render_template("index.html", discord_auth_url=Oauth.discord_auth_url, authorized=check_if_authorized())
-
-
-@app.route("/static/<filename>")
-def static_files(filename):
-    try:
-        mimetype = magic_from_file(f"app/static/{filename}", mime=True)
-        return send_file(f"static/{filename}", mimetype=mimetype)
-    except FileNotFoundError:
-        abort(404)
 
 
 @app.route("/dashboard", methods=["GET", "POST"])

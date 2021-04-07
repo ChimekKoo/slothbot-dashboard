@@ -1,8 +1,7 @@
 venv/
 .idea/
-log.log
+*.log
 .DS_Store
 cred.json
-db.sqlite3
-sentence_tokenizer.pickle
+cred.yaml
 **/__pycache__/

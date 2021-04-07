@@ -1,45 +1,41 @@
 # SlothBot
 
-![Discord](https://img.shields.io/discord/801061806712946698?color=%237289DA&label=discord&logo=discord&logoColor=white)
-![Lines of code](https://img.shields.io/tokei/lines/github/chimekkoo/slothbot?logo=github)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/chimekkoo/slothbot?logo=github)
-![GitHub](https://img.shields.io/github/license/chimekkoo/slothbot?logo=github)
-![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/chimekkoo/slothbot?label=docker%20image&logo=docker)
-![Website](https://img.shields.io/website?label=test%20website&url=http%3A%2F%2Fslothbot.chimekkoo.repl.co)
-
+[![Discord](https://img.shields.io/discord/829038486316122123?color=%237289DA&label=discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/ubxunkwtMV)
+![Status](https://img.shields.io/static/v1?label=status&message=in%20progress&color=informational&style=for-the-badge)
+![Lines of code](https://img.shields.io/tokei/lines/github/chimekkoo/slothbot-dashboard?logo=github&style=for-the-badge)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/chimekkoo/slothbot-dashboard?logo=github&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/chimekkoo/slothbot-dashboard?logo=github&style=for-the-badge)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/chimekkoo/slothbot-dashboard?label=docker%20image&logo=docker&style=for-the-badge)](https://hub.docker.com/r/chimekkoo/slothbot-dashboard)
+![Website](https://img.shields.io/website?label=test%20website&url=http%3A%2F%2Fslothbot.chimekkoo.repl.co&style=for-the-badge)
+---
 ## Table of contents
 * [General info](#general-info)
-* [Deployment](#deployment)
+* [Status](#status)
+* [Technologies](#technologies)
 * [Chat](#chat)
 * [Docker](#docker)
-* [Technologies](#technologies)
-* [Status](#status)
 * [Contributing](#contributing)
-* [License](#license)
 * [Contact](#contact)
+---
+### General info
+Online dashboard for [Slothbot](https://github.com/chimekkoo/slothbot) - multipurpose discord bot for everyone.
 
-## General info
-SlothBot is a polish-language, AI discord bot. It can be used for moderation, automation and just chatting with a smart bot. [Join our discord server!](https://discord.gg/sNqxgNRGmk)
-
-## Deployment
-Project it not deployed yet.
-
-## Chat
-We are on [discord](https://discord.gg/sNqxgNRGmk)!
-
-## Docker
-Project has not docker image yet.
-
-## Technologies
-- Python 3.8.5
-- Flask==1.1.2
-- discord.py==1.6.0
-
-## Status
+### Status
 _in progress_
 
-## Contributing
+### Technologies
+- Python 3
+- Flask
+- MongoDB + PyMongo
+
+### Chat
+We are on discord. [Join us!](https://discord.gg/ubxunkwtMV)
+
+### Docker
+Project has no docker image yet.
+
+### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Contact
+### Contact
 Created by [@ChimekKoo](https://github.com/ChimekKoo) - feel free to contact me!
